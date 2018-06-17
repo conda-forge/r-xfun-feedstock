@@ -14,14 +14,16 @@ Summary: Miscellaneous functions commonly used in other packages maintained by '
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-xfun-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-xfun-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-xfun-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-xfun-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-xfun-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-xfun-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-xfun-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-xfun-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-xfun-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-xfun-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-xfun-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-xfun-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-xfun/badges/version.svg)](https://anaconda.org/conda-forge/r-xfun)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-xfun/badges/downloads.svg)](https://anaconda.org/conda-forge/r-xfun)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--xfun-green.svg)](https://anaconda.org/conda-forge/r-xfun) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-xfun.svg)](https://anaconda.org/conda-forge/r-xfun) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-xfun.svg)](https://anaconda.org/conda-forge/r-xfun) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-xfun.svg)](https://anaconda.org/conda-forge/r-xfun) |
 
 Installing r-xfun
 =================
