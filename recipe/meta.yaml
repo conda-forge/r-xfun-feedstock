@@ -1,4 +1,4 @@
-{% set version = '0.1' %}
+{% set version = "0.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/xfun_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/xfun/xfun_{{ version }}.tar.gz
-  sha256: f226d4b603b04af3d1c5a8bbe9adfe06bae76aaf1ae1d04c3307f1c7eb0ba5ea
+  sha256: 8a3ceb9dbb7efabab572429450e81a3f275b5b5ddb382fe7df6d82c49913827e
 
 build:
   number: 0
