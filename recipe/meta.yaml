@@ -1,5 +1,4 @@
-{% set version = '0.3' %}
-
+{% set version = '0.4' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,28 +7,24 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: xfun_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/xfun_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/xfun/xfun_{{ version }}.tar.gz
-  sha256: 897211d135a7fc5f955e4c810e0a0d8fa12b034b0a89dde47ab23e9b486b21e4
+  sha256: 9bdff1d44c3a36081162e75b2680fdf03b38d51972ce90d4525937c11ef72125
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
-
+  number: 1000
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
 
   host:
     - r-base
-
   run:
     - r-base
 
@@ -43,15 +38,30 @@ about:
   license: MIT
   summary: Miscellaneous functions commonly used in other packages maintained by 'Yihui Xie'.
   license_family: MIT
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\MIT'  # [win]
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
+    - conda-forge/r
     - bsennblad
-    - dbast
+
+# Package: xfun
+# Type: Package
+# Title: Miscellaneous Functions by 'Yihui Xie'
+# Version: 0.4
+# Authors@R: c( person("Yihui", "Xie", role = c("aut", "cre", "cph"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")), person("Daijiang", "Li", role = "ctb"), person() )
+# Description: Miscellaneous functions commonly used in other packages maintained by 'Yihui Xie'.
+# Imports: tools
+# Suggests: testit, parallel, rstudioapi, tinytex, mime, markdown, knitr, htmltools, base64enc, rmarkdown
+# License: MIT + file LICENSE
+# URL: https://github.com/yihui/xfun
+# BugReports: https://github.com/yihui/xfun/issues
+# Encoding: UTF-8
+# LazyData: true
+# RoxygenNote: 6.1.0
+# VignetteBuilder: knitr
+# NeedsCompilation: no
+# Packaged: 2018-10-23 16:51:26 UTC; yihui
+# Author: Yihui Xie [aut, cre, cph] (<https://orcid.org/0000-0003-0645-5666>), Daijiang Li [ctb]
+# Maintainer: Yihui Xie <xie@yihui.name>
+# Repository: CRAN
+# Date/Publication: 2018-10-23 17:10:02 UTC
