@@ -5,7 +5,7 @@ Home: https://github.com/yihui/xfun
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Miscellaneous functions commonly used in other packages maintained by 'Yihui Xie'.
 
