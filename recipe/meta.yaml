@@ -1,4 +1,4 @@
-{% set version = "0.30" %}
+{% set version = "0.31" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/xfun_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/xfun/xfun_{{ version }}.tar.gz
-  sha256: ebf81cf302e051f0361dc4c8b519d99e20a353b4b29cee13e768663ff562c0ee
+  sha256: d169f3e682dab0c3f2ca381f2dba9b7014a5e2ca3d6863dbae3d1bca699ef235
 
 build:
   merge_build_host: true  # [win]
