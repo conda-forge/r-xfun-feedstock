@@ -3,6 +3,7 @@ About r-xfun-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xfun-feedstock/blob/main/LICENSE.txt)
 
+
 About r-xfun
 ------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/yihui/xfun
 Package license: MIT
 
 Summary: Miscellaneous functions commonly used in other packages maintained by 'Yihui Xie'.
+
 About r-xfun
 ------------
 
