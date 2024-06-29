@@ -1,6 +1,5 @@
 {% set version = "0.45" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-xfun
@@ -13,8 +12,7 @@ source:
   sha256: 3816f05c2fd297b40750be1a2f386f0aa4637136421f504d14b6ad9ea0993611
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,7 +35,6 @@ requirements:
     - r-base
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
 
 test:
   commands:
