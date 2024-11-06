@@ -1,4 +1,4 @@
-{% set version = "0.48" %}
+{% set version = "0.49" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/xfun_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/xfun/xfun_{{ version }}.tar.gz
-  sha256: 27668c445257456a759015ab494edb4dc54af06e36523be423d313af651c932e
+  sha256: cd2102895cca4ba8b81601eab0b724ad4c7ad15485720e427fc021b950b1b375
 
 build:
   number: 0
