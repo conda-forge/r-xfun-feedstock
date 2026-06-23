@@ -3,7 +3,7 @@
 
 package:
   name: r-xfun
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -26,10 +26,8 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
     - {{ stdlib("c") }}            # [not win]
-    - {{ compiler('cxx') }}        # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
     - {{ stdlib("m2w64_c") }}      # [win]
-    - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
